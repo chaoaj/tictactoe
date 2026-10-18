@@ -3,6 +3,36 @@ html, body {
   padding: 0;
 }
 
+body {
+  font-family: sans-serif;
+  color: #1A1A1A;
+  background: #FFFFFF;
+  line-height: 1.4;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 8px 16px;
+}
+
 canvas {
   display: block;
+  max-width: 100%;
+}
+
+canvas:focus {
+  outline: 3px solid #C26A00;
+  outline-offset: 2px;
+}
+
+button, select {
+  font-size: 1rem;
+  min-height: 44px;
+  padding: 0 12px;
+  margin: 4px 4px 4px 0;
+}
+
+#controls {
+  margin: 8px 0;
 }

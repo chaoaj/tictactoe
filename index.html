@@ -4,15 +4,42 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sketch</title>
+    <title>Tic-Tac-Toe Game in p5.js</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
   </head>
 
   <body>
+    <main>
+      <h1>Tic-Tac-Toe</h1>
+      <p id="status">Player X's turn</p>
+      <p id="announcer" aria-live="polite"></p>
+      <div id="canvas-holder"></div>
+      <div id="scoreboard">
+        <h2>Score</h2>
+        <p id="scores">X wins: 0 | O wins: 0 | Draws: 0</p>
+      </div>
+      <div id="controls">
+        <label for="mode">Mode</label>
+        <select id="mode">
+          <option value="two">Two Players</option>
+          <option value="computer">Vs. Computer</option>
+        </select>
+        <button type="button" id="new-round">New Round</button>
+        <button type="button" id="reset-score">Reset Score</button>
+      </div>
+      <section id="instructions">
+        <h2>How to play</h2>
+        <ul>
+          <li>Mouse or touch: click or tap a cell to place your mark.</li>
+          <li>Keyboard: Tab to the board, use the arrow keys or number keys 1-9 to move focus, then press Enter or Space to play.</li>
+          <li>Press N for a new round, R to reset the score, and B to hear a description of the board.</li>
+          <li>Get three marks in a row, column, or diagonal to win.</li>
+        </ul>
+      </section>
+    </main>
     <script src="sketch.js"></script>
   </body>
 </html>
